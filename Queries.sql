@@ -3,21 +3,21 @@
 --Creacion de Tablas
 --1
 CREATE TABLE alumnos (
-    alumnoid SERIAL PRIMARY KEY
+    alumnoid SERIAL PRIMARY KEY,
     nombre TEXT NOT NULL,
     email TEXT NOT NULL
 );
 
 --2
 CREATE TABLE docentes (
-    docenteid SERIAL PRIMARY KEY
+    docenteid SERIAL PRIMARY KEY,
     nombre TEXT NOT NULL,
     rol TEXT NOT NULL
 );
 
 --3
 CREATE TABLE programas (
-    programaid SERIAL PRIMARY KEY
+    programaid SERIAL PRIMARY KEY,
     verticalid INT NOT NULL,
     promocionid INT NOT NULL,
     campus TEXT
@@ -25,7 +25,7 @@ CREATE TABLE programas (
 
 --4
 CREATE TABLE programa_alumnos (
-    programaal_id SERIAL PRIMARY KEY
+    programaal_id SERIAL PRIMARY KEY,
     alumnoid INT NOT NULL,
     programaid INT NOT NULL,
     modalidad TEXT
@@ -33,7 +33,7 @@ CREATE TABLE programa_alumnos (
 
 --5
 CREATE TABLE programa_docentes(
-    programadoc_id SERIAL PRIMARY KEY
+    programadoc_id SERIAL PRIMARY KEY,
     docenteid INT NOT NULL,
     programaid INT NOT NULL,
     modalidad TEXT
@@ -41,20 +41,20 @@ CREATE TABLE programa_docentes(
 
 --6
 CREATE TABLE promociones(
-    promocionid SERIAL PRIMARY KEY
+    promocionid SERIAL PRIMARY KEY,
     mes TEXT NOT NULL,
     fechainicio TEXT NOT NULL
 );
 
 --7
 CREATE TABLE vertical(
-    verticalid SERIAL PRIMARY KEY
+    verticalid SERIAL PRIMARY KEY,
     nombre TEXT NOT NULL
 );
 
 --8
 CREATE TABLE proyectos(
-    proyectoid SERIAL PRIMARY KEY
+    proyectoid SERIAL PRIMARY KEY,
     verticalid INT NOT NULL,
     nombre TEXT NOT NULL
 );
