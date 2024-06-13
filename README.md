@@ -16,7 +16,7 @@ Este proyecto consiste en la creación de una base de datos relacional para gest
 - Los alumnos pueden cursar diferentes bootcamps en diferentes promociones y modalidades; no al mismo tiempo.
 - Los docentes pueden impartir el mismo bootcamp en diferentes promociones y modalidades.
 - La modalidad de los alumnos se deja por completar ya que no se nos ha proporcionado el dato. Interesante para escalabilidad.
-- Hay dos docentes en promociones sin alumnos (indicamos programaid null hasta mas info), Rosalva Ayuso y Angelica Corral.
+- Hay dos docentes en promociones sin alumnos, y por tanto sin promocion asociada; no los incluimos hasta tener los datos completos.
 
 ## Modelo Entidad-Relación (E/R)
 ![Modelo_Entidad_Relacion](assets/Modelo_Entidad_Relacion.png)
