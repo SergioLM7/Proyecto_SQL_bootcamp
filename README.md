@@ -21,7 +21,7 @@ Este proyecto consiste en la creación de una base de datos relacional para gest
 ## Modelo Entidad-Relación (E/R)
 ![Modelo_Entidad_Relacion](assets/Modelo_Entidad_Relacion.png)
 
-## Diagrama ER
+## Modelo Lógico de la Base de Datos
 ![Modelo_Logico](assets/Modelo_Logico.png)
 
 ## Estructura de la Base de Datos
