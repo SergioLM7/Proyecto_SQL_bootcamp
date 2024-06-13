@@ -90,3 +90,13 @@ El diagrama entidad-relación (ER) de la base de datos se puede ver en la imagen
 ### vertical
 - **verticalid**: Identificador único del área vertical (integer).
 - **nombrevertical**: Nombre del área vertical (text).
+
+
+
+
+## Queries test
+conectar tabla alumnos con programas
+SELECT al.nombre, al.email, pr.sede, pral.programaid
+FROM alumnos al
+INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid
+INNER JOIN programas pr ON pr.programaid = pral.programaid;
