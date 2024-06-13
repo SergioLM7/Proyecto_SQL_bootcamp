@@ -19,10 +19,10 @@ Este proyecto consiste en la creación de una base de datos relacional para gest
 - Hay dos docentes en promociones sin alumnos (indicamos programaid null hasta mas info), Rosalva Ayuso y Angelica Corral.
 
 ## Modelo Entidad-Relación (E/R)
-![Modelo_Logico](assets/Modelo_Logico.png)
+![Modelo_Entidad_Relacion](assets/Modelo_Entidad_Relacion.png)
 
 ## Diagrama ER
-![Modelo_Relacional](assets/Modelo_Relacional.png)
+![Modelo_Logico](assets/Modelo_Logico.png)
 
 ## Estructura de la Base de Datos
 
