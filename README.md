@@ -12,6 +12,10 @@ Este proyecto consiste en la creación de una base de datos relacional para gest
 - ✔️ **Creación de la Base de Datos:** Utilizando el sistema de gestión de bases de datos de PostgreSQL.
 - ❌ **Alojar en algún servidor** vuestras bases de datos para poder acceder desde aplicaciones de terceros.
 
+## Asunciones
+- Los alumnos pueden cursar diferentes bootcamps en diferentes promociones y modalidades; no al mismo tiempo.
+- Los docentes pueden impartir el mismo bootcamp en diferentes promociones y modalidades.
+
 ## Modelo Entidad-Relación (E/R)
 
 
