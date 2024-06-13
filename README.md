@@ -85,7 +85,3 @@ El diagrama entidad-relación (ER) de la base de datos se puede ver en la imagen
 ### vertical
 - **verticalid**: Identificador único del área vertical (integer).
 - **nombrevertical**: Nombre del área vertical (text).
-
-## Contribuciones
-
-Las contribuciones a este proyecto son bienvenidas. Si deseas contribuir, por favor sigue los pasos descritos en el archivo CONTRIBUTING.md.
