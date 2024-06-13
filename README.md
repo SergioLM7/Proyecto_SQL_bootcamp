@@ -1,5 +1,4 @@
 ![Header Image](assets/header.jpg)
-
 # Proyecto de Base de Datos
 
 ## Descripción
@@ -12,13 +11,13 @@ La base de datos está compuesta por las siguientes tablas:
 
 - **alumnos**: Almacena información sobre los alumnos.
 - **docentes**: Almacena información sobre los docentes.
-- **programas**: Almacena información sobre los programas académicos.
-- **promociones**: Almacena información sobre las promociones de los programas.
-- **proyectos**: Almacena información sobre los proyectos realizados.
-- **notas**: Almacena las notas de los alumnos en los distintos programas.
 - **programa_alumnos**: Relaciona los alumnos con los programas en los que están inscritos.
 - **programa_docentes**: Relaciona los docentes con los programas en los que enseñan.
+- **programas**: Almacena información sobre los programas académicos.
+- **promociones**: Almacena información sobre las promociones de los programas.
 - **vertical**: Almacena información sobre las áreas verticales de los programas.
+- **proyectos**: Almacena información sobre los proyectos realizados.
+- **notas**: Almacena las notas de los alumnos en los distintos programas.
 
 El diagrama entidad-relación (ER) de la base de datos se puede ver en la imagen proporcionada: [assets/diagrama_er.png](assets/diagrama_er.png).
 
@@ -74,7 +73,8 @@ El diagrama entidad-relación (ER) de la base de datos se puede ver en la imagen
 
 ## Diagrama ER
 
-Estructura final de la base de datos: [base_de_datos_final.jpeg](assets/base_de_datos_final.jpeg).
+Estructura final de la base de datos:
+![Modelo_Relacional](assets/Modelo_Relacional.png)
 
 ## Contribuciones
 
