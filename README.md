@@ -1,9 +1,11 @@
 ![Header Image](assets/header.jpg)
-# Proyecto de Base de Datos
+# Proyecto de Creación de Base de Datos Relacional
 
 ## Descripción
 
-Este proyecto consiste en la creación de una base de datos para gestionar información de alumnos, docentes, programas, promociones, proyectos y notas. La estructura de la base de datos está diseñada para soportar la gestión académica y administrativa de una institución educativa.
+Este proyecto consiste en la creación de una base de datos relacional para gestionar información de alumnos y docentes de una escuela de bootcamps. A partir de unos datos de entrada sin normalizar, se ha diseñado una estructura normalizada y escalable de base de datos que soporte la gestión académica y administrativa de una institución educativa de estas caracterísitcas.
+
+## Objetivos
 
 ## Estructura de la Base de Datos
 
