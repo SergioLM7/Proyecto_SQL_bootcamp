@@ -6,6 +6,19 @@
 Este proyecto consiste en la creación de una base de datos relacional para gestionar información de alumnos y docentes de una escuela de bootcamps. A partir de unos datos de entrada sin normalizar, se ha diseñado una estructura normalizada y escalable de base de datos que soporte la gestión académica y administrativa de una institución educativa de estas caracterísitcas.
 
 ## Objetivos
+- ✔️ **Normalización de Datos:** Realizar una normalización adecuada para eliminar la redundancia y garantizar la integridad de los datos.
+- ✔️ **Modelo Entidad-Relación (E/R):** Diseñar un modelo E/R que represente la estructura de la base de datos normalizada.
+- ✔️ **Modelo Lógico de la Base de Datos:** Con base en el modelo E/R, desarrollar un modelo lógico de la base de datos.
+- ✔️ **Creación de la Base de Datos:** Utilizando el sistema de gestión de bases de datos de PostgreSQL.
+- ❌ **Alojar en algún servidor** vuestras bases de datos para poder acceder desde aplicaciones de terceros.
+
+## Modelo Entidad-Relación (E/R)
+
+
+## Diagrama ER
+
+Estructura final de la base de datos:
+![Modelo_Relacional](assets/Modelo_Relacional.png)
 
 ## Estructura de la Base de Datos
 
@@ -72,11 +85,6 @@ El diagrama entidad-relación (ER) de la base de datos se puede ver en la imagen
 ### vertical
 - **verticalid**: Identificador único del área vertical (integer).
 - **nombrevertical**: Nombre del área vertical (text).
-
-## Diagrama ER
-
-Estructura final de la base de datos:
-![Modelo_Relacional](assets/Modelo_Relacional.png)
 
 ## Contribuciones
 
