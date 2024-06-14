@@ -34,8 +34,6 @@ La base de datos está compuesta por las siguientes tablas:
 - **programa_docentes**: Relaciona los docentes con los programas en los que enseñan.
 - **programas**: Almacena información sobre los programas académicos.
 - **promociones**: Almacena información sobre las promociones de los programas.
-- **vertical**: Almacena información sobre las áreas verticales de los programas.
-- **proyectos**: Almacena información sobre los proyectos realizados.
 - **notas**: Almacena las notas de los alumnos en los distintos programas.
 
 ## Descripción de las Tablas
