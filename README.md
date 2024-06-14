@@ -71,7 +71,7 @@ La base de datos está compuesta por las siguientes tablas:
 ### programas
 
 - **programaid**: Identificador único del programa [vertical - sede - promocion] (integer).
-- **verticalid**: Identificador del área vertical del programa (integer).
+- **vertical**: Identificador del área vertical del programa (text).
 - **promocionid**: Identificador de la promoción del programa (integer).
 - **sede**: Sede del programa (text).
 
