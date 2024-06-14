@@ -38,8 +38,6 @@ La base de datos está compuesta por las siguientes tablas:
 - **proyectos**: Almacena información sobre los proyectos realizados.
 - **notas**: Almacena las notas de los alumnos en los distintos programas.
 
-El diagrama entidad-relación (ER) de la base de datos se puede ver en la imagen proporcionada: [assets/diagrama_er.png](assets/diagrama_er.png).
-
 ## Descripción de las Tablas
 
 ### alumnos
@@ -53,7 +51,7 @@ El diagrama entidad-relación (ER) de la base de datos se puede ver en la imagen
 - **rol**: Rol del docente en la institución (text).
 
 ### programas
-- **programaid**: Identificador único del programa (integer).
+- **programaid**: Identificador único del programa [vertical - sede - promocion] (integer).
 - **verticalid**: Identificador del área vertical del programa (integer).
 - **promocionid**: Identificador de la promoción del programa (integer).
 - **sede**: Sede del programa (text).
@@ -62,11 +60,6 @@ El diagrama entidad-relación (ER) de la base de datos se puede ver en la imagen
 - **promocionid**: Identificador único de la promoción (integer).
 - **mes**: Mes de inicio de la promoción (text).
 - **fechainicio**: Fecha de inicio de la promoción (text).
-
-### proyectos
-- **proyectoid**: Identificador único del proyecto (integer).
-- **verticalid**: Identificador del área vertical del proyecto (integer).
-- **nombreproyecto**: Nombre del proyecto (text).
 
 ### notas
 - **programaal_id**: Identificador de la relación programa-alumno (integer).
