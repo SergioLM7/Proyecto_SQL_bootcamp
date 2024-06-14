@@ -114,23 +114,31 @@ WHERE v.nombrevertical = 'Data Science' AND n.proyecto_hlf IS NOT NULL
 
 #### Consultar la vertical que imparte cada docente:
 ```sql
-SELECT d.docenteid, d.nombre, d.rol, v.nombrevertical
+SELECT d.docenteid, d.nombre, d.rol, pro.vertical
 FROM docentes d
 INNER JOIN programa_docentes prd ON prd.docenteid = d.docenteid
 INNER JOIN programas pro ON pro.programaid = prd.programaid
 INNER JOIN promociones pr ON pr.promocionid = pro.promocionid
-INNER JOIN vertical v ON v.nombrevertical = pro.vertical
 ```
 
 #### Consultar todos los docentes que imparten una vertical específica:
 ```sql
-SELECT d.docenteid, d.nombre, d.rol, v.nombrevertical
+SELECT d.docenteid, d.nombre, d.rol, pro.vertical
 FROM docentes d
 INNER JOIN programa_docentes prd ON prd.docenteid = d.docenteid
 INNER JOIN programas pro ON pro.programaid = prd.programaid
 INNER JOIN promociones pr ON pr.promocionid = pro.promocionid
-INNER JOIN vertical v ON v.nombrevertical = pro.vertical
 WHERE pro.vertical = 'Full Stack'
+```
+
+#### Consultar todos los docentes que tienen un rol específico:
+```sql
+SELECT d.docenteid, d.nombre, d.rol, pro.vertical
+FROM docentes d
+INNER JOIN programa_docentes prd ON prd.docenteid = d.docenteid
+INNER JOIN programas pro ON pro.programaid = prd.programaid
+INNER JOIN promociones pr ON pr.promocionid = pro.promocionid
+WHERE d.rol = 'TA'
 ```
 
 #### Consultar a qué promoción está apuntado cada alumno y en qué día empezó:
