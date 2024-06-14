@@ -73,12 +73,11 @@ La base de datos está compuesta por las siguientes tablas:
 
 ## Diagrama ER
 
-Diagramas entidad-relación (ER) de la base de datos: 
-[assets/01_diagrama_er.png](assets/01_diagrama_er.png)
-[assets/02_diagrama_er.png](assets/01_diagrama_er.png)
-[assets/03_diagrama_er.png](assets/01_diagrama_er.png)
-[assets/04_diagrama_er.png](assets/01_diagrama_er.png)
-[assets/05_diagrama_er.png](assets/01_diagrama_er.png)
+![Diagrama ER 01](assets/01_diagrama_er.png)
+![Diagrama ER 02](assets/02_diagrama_er.png)
+![Diagrama ER 03](assets/03_diagrama_er.png)
+![Diagrama ER 04](assets/04_diagrama_er.png)
+![Diagrama ER 05](assets/05_diagrama_er.png)
 
 ## Contribuciones
 
