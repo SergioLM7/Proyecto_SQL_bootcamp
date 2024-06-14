@@ -112,7 +112,7 @@ INNER JOIN notas n ON n.programaal_id = pral.programaal_id
 WHERE v.nombrevertical = 'Data Science' AND n.proyecto_hlf IS NOT NULL
 ```
 
-#### Consultar la vertical que imparte un docente específico
+#### Consultar la vertical que imparte cada docente
 ```sql
 SELECT d.docenteid, d.nombre, d.rol, v.nombrevertical
 FROM docentes d
@@ -120,4 +120,15 @@ INNER JOIN programa_docentes prd ON prd.docenteid = d.docenteid
 INNER JOIN programas pro ON pro.programaid = prd.programaid
 INNER JOIN promociones pr ON pr.promocionid = pro.promocionid
 INNER JOIN vertical v ON v.nombrevertical = pro.vertical
+```
+
+#### Consultar todos los docentes que imparte una vertical específica.
+```sql
+SELECT d.docenteid, d.nombre, d.rol, v.nombrevertical
+FROM docentes d
+INNER JOIN programa_docentes prd ON prd.docenteid = d.docenteid
+INNER JOIN programas pro ON pro.programaid = prd.programaid
+INNER JOIN promociones pr ON pr.promocionid = pro.promocionid
+INNER JOIN vertical v ON v.nombrevertical = pro.vertical
+WHERE pro.vertical = 'Full Stack'
 ```
