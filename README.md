@@ -141,3 +141,14 @@ INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid
 INNER JOIN programas pro ON pro.programaid = pral.programaid
 INNER JOIN promociones pr ON pr.promocionid = pro.promocionid
 ```
+
+#### Consultar cuantos alumnos le corresponde a cada docente:
+```sql
+SELECT DISTINCT doc.docenteid AS "DocenteID", doc.nombre AS "NombreProfesor", count(al.alumnoid) AS "AlumnosPorDocente"
+FROM alumnos al
+INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid
+INNER JOIN programas pro ON pro.programaid = pral.programaid
+INNER JOIN programa_docentes prd ON prd.programaid = pro.programaid
+INNER JOIN docentes doc ON doc.docenteid = prd.docenteid
+GROUP BY  doc.docenteid, doc.nombre
+```
