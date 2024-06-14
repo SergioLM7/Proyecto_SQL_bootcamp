@@ -71,7 +71,7 @@ La base de datos está compuesta por las siguientes tablas:
 - **verticalid**: Identificador único del área vertical (integer).
 - **nombrevertical**: Nombre del área vertical (text).
 
-## Diagrama ER
+## Diagramas ER
 
 ![Diagrama ER 01](assets/01_diagrama_er.png)
 ![Diagrama ER 02](assets/02_diagrama_er.png)
