@@ -93,11 +93,6 @@ La base de datos está compuesta por las siguientes tablas:
 conectar tabla alumnos con programas
 
 ```sql
-SELECT al.nombre, al.email, pr.sede, pral.programaid FROM alumnos al INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid INNER JOIN programas pr ON pr.programaid = pral.programaid;
-
-```
-
-```
 SELECT al.nombre, al.email, pr.sede, pral.programaid
 FROM alumnos al
 INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid
