@@ -84,9 +84,9 @@ La base de datos está compuesta por las siguientes tablas:
 ### notas
 
 - **programaal_id**: Identificador de la relación programa-alumno (integer).
-- **verticalid**: Identificador del área vertical de la nota (integer).
-- **proyectoid**: Identificador del proyecto asociado a la nota (integer).
-- **nota**: Nota obtenida (text).
+- **proyecto 1 - 9**: nota de cada proyecto (Apto / No Apto / Null) (text).
+- **nombre**: nombre completo del alumno (text).
+- 
 
 ## Queries test
 #### Consultar todas las notas de cada alumno (ordenado por vertical y nombre):
