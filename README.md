@@ -49,13 +49,13 @@ La base de datos está compuesta por las siguientes tablas:
 - **rol**: Rol del docente en la institución (text).
 
 ### programa_alumnos
-- **programaal_id**: Identificador único de la relación programa-alumno (integer).
+- **programaal_id**: Identificador único de cada programa cursado por cada alumno (integer).
 - **alumnoid**: Identificador del alumno (integer).
 - **programaid**: Identificador del programa (integer).
 - **modalidad**: Modalidad del programa (text).
 
 ### programa_docentes
-- **programado_id**: Identificador único de la relación programa-docente (integer).
+- **programado_id**: Identificador único de cada programa cursado por cada docente (integer).
 - **docenteid**: Identificador del docente (integer).
 - **programaid**: Identificador del programa (integer).
 - **modalidad**: Modalidad del programa (text).
@@ -76,7 +76,6 @@ La base de datos está compuesta por las siguientes tablas:
 - **verticalid**: Identificador del área vertical de la nota (integer).
 - **proyectoid**: Identificador del proyecto asociado a la nota (integer).
 - **nota**: Nota obtenida (text).
-
 
 ## Queries test
 conectar tabla alumnos con programas
