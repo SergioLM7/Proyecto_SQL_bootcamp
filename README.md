@@ -132,3 +132,12 @@ INNER JOIN promociones pr ON pr.promocionid = pro.promocionid
 INNER JOIN vertical v ON v.nombrevertical = pro.vertical
 WHERE pro.vertical = 'Full Stack'
 ```
+
+#### Consultar a que promoción/nes está apuntado cada alumno:
+```sql
+SELECT al.alumnoid, al.nombre, pr.mes, pr.fechainicio
+FROM alumnos al
+INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid
+INNER JOIN programas pro ON pro.programaid = pral.programaid
+INNER JOIN promociones pr ON pr.promocionid = pro.promocionid
+```
