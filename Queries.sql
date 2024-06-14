@@ -118,3 +118,11 @@ ADD CONSTRAINT ac_proyecto
 FOREIGN KEY (proyectoid)
 REFERENCES proyectos(proyectoid);
 
+--Insertar datos en tablas
+--Ejemplo desde una tabla temporal
+INSERT INTO PROMOCIONES (fecha_comienzo, mes)
+SELECT fecha_comienzo, promocion AS mes
+FROM temp_alumnos
+GROUP BY fecha_comienzo, promocion
+ORDER BY fecha_comienzo;
+
