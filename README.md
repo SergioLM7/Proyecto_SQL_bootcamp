@@ -79,10 +79,6 @@ La base de datos está compuesta por las siguientes tablas:
 - **programaid**: Identificador del programa (integer).
 - **modalidad**: Modalidad del programa (text).
 
-### vertical
-- **verticalid**: Identificador único del área vertical (integer).
-- **nombrevertical**: Nombre del área vertical (text).
-
 
 
 
