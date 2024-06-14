@@ -89,18 +89,7 @@ La base de datos está compuesta por las siguientes tablas:
 - **nota**: Nota obtenida (text).
 
 ## Queries test
-
-conectar tabla alumnos con programas
-
-```sql
-SELECT al.nombre, al.email, pr.sede, pral.programaid
-FROM alumnos al
-INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid
-INNER JOIN programas pr ON pr.programaid = pral.programaid;
-
-```
-
-### Consultar notas
+#### Consultar todas las notas
 ```sql
 SELECT al.alumnoid, al.nombre, v.nombrevertical, n.proyecto_hlf, n.proyecto_eda, n.proyecto_bbdd, n.proyecto_deployment,
 n.proyecto_webdev, n.proyecto_frontend, n.proyecto_backend, n.proyecto_react, n.proyecto_fullstack
@@ -109,4 +98,16 @@ INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid
 INNER JOIN programas pr ON pr.programaid = pral.programaid
 INNER JOIN vertical v ON v.nombrevertical = pr.vertical
 INNER JOIN notas n ON n.programaal_id = pral.programaal_id;
+```
+
+#### Consultar las notas específicas de un programa específico
+```sql
+SELECT al.alumnoid, al.nombre, v.nombrevertical, n.proyecto_hlf, n.proyecto_eda, n.proyecto_bbdd, n.proyecto_deployment,
+n.proyecto_webdev, n.proyecto_frontend, n.proyecto_backend, n.proyecto_react, n.proyecto_fullstack
+FROM alumnos al
+INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid
+INNER JOIN programas pr ON pr.programaid = pral.programaid
+INNER JOIN vertical v ON v.nombrevertical = pr.vertical
+INNER JOIN notas n ON n.programaal_id = pral.programaal_id
+WHERE v.nombrevertical = 'Data Science' AND n.proyecto_hlf IS NOT NULL
 ```
