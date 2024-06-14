@@ -89,27 +89,25 @@ La base de datos está compuesta por las siguientes tablas:
 - **nota**: Nota obtenida (text).
 
 ## Queries test
-#### Consultar todas las notas de cada alumno:
+#### Consultar todas las notas de cada alumno (ordenado por vertical y nombre):
 ```sql
-SELECT al.alumnoid, al.nombre, v.nombrevertical, n.proyecto_hlf, n.proyecto_eda, n.proyecto_bbdd, n.proyecto_deployment,
+SELECT al.alumnoid, al.nombre, pr.vertical, n.proyecto_hlf, n.proyecto_eda, n.proyecto_bbdd, n.proyecto_deployment,
 n.proyecto_webdev, n.proyecto_frontend, n.proyecto_backend, n.proyecto_react, n.proyecto_fullstack
 FROM alumnos al
 INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid
 INNER JOIN programas pr ON pr.programaid = pral.programaid
-INNER JOIN vertical v ON v.nombrevertical = pr.vertical
-INNER JOIN notas n ON n.programaal_id = pral.programaal_id;
+INNER JOIN notas n ON n.programaal_id = pral.programaal_id
+ORDER BY pr.vertical, al.nombre
 ```
 
-#### Consultar las notas de un programa específico:
+#### Consultar las notas de un Data Science:
 ```sql
-SELECT al.alumnoid, al.nombre, v.nombrevertical, n.proyecto_hlf, n.proyecto_eda, n.proyecto_bbdd, n.proyecto_deployment,
-n.proyecto_webdev, n.proyecto_frontend, n.proyecto_backend, n.proyecto_react, n.proyecto_fullstack
+SELECT al.alumnoid, al.nombre, pr.vertical, n.proyecto_hlf, n.proyecto_eda, n.proyecto_bbdd, n.proyecto_deployment
 FROM alumnos al
 INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid
 INNER JOIN programas pr ON pr.programaid = pral.programaid
-INNER JOIN vertical v ON v.nombrevertical = pr.vertical
 INNER JOIN notas n ON n.programaal_id = pral.programaal_id
-WHERE v.nombrevertical = 'Data Science' AND n.proyecto_hlf IS NOT NULL
+WHERE pr.vertical = 'Data Science'
 ```
 
 #### Consultar la vertical que imparte cada docente:
