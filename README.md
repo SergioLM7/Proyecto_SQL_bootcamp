@@ -99,3 +99,14 @@ INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid
 INNER JOIN programas pr ON pr.programaid = pral.programaid;
 
 ```
+
+### Consultar notas
+```sql
+SELECT al.alumnoid, al.nombre, v.nombrevertical, n.proyecto_hlf, n.proyecto_eda, n.proyecto_bbdd, n.proyecto_deployment,
+n.proyecto_webdev, n.proyecto_frontend, n.proyecto_backend, n.proyecto_react, n.proyecto_fullstack
+FROM alumnos al
+INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid
+INNER JOIN programas pr ON pr.programaid = pral.programaid
+INNER JOIN vertical v ON v.nombrevertical = pr.vertical
+INNER JOIN notas n ON n.programaal_id = pral.programaal_id;
+```
