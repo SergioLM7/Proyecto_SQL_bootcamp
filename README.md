@@ -89,7 +89,7 @@ La base de datos está compuesta por las siguientes tablas:
 - **nota**: Nota obtenida (text).
 
 ## Queries test
-#### Consultar todas las notas:
+#### Consultar todas las notas de cada alumno:
 ```sql
 SELECT al.alumnoid, al.nombre, v.nombrevertical, n.proyecto_hlf, n.proyecto_eda, n.proyecto_bbdd, n.proyecto_deployment,
 n.proyecto_webdev, n.proyecto_frontend, n.proyecto_backend, n.proyecto_react, n.proyecto_fullstack
@@ -122,7 +122,7 @@ INNER JOIN promociones pr ON pr.promocionid = pro.promocionid
 INNER JOIN vertical v ON v.nombrevertical = pro.vertical
 ```
 
-#### Consultar todos los docentes que imparte una vertical específica:
+#### Consultar todos los docentes que imparten una vertical específica:
 ```sql
 SELECT d.docenteid, d.nombre, d.rol, v.nombrevertical
 FROM docentes d
@@ -133,7 +133,7 @@ INNER JOIN vertical v ON v.nombrevertical = pro.vertical
 WHERE pro.vertical = 'Full Stack'
 ```
 
-#### Consultar a que promoción/nes está apuntado cada alumno:
+#### Consultar a qué promoción está apuntado cada alumno y en qué día empezó:
 ```sql
 SELECT al.alumnoid, al.nombre, pr.mes, pr.fechainicio
 FROM alumnos al
