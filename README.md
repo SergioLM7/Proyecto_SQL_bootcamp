@@ -98,6 +98,9 @@ SELECT al.nombre, al.email, pr.sede, pral.programaid FROM alumnos al INNER JOIN 
 ```
 
 ```
-SELECT al.nombre, al.email, pr.sede, pral.programaid FROM alumnos al INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid INNER JOIN programas pr ON pr.programaid = pral.programaid;
+SELECT al.nombre, al.email, pr.sede, pral.programaid
+FROM alumnos al
+INNER JOIN programa_alumnos pral ON pral.alumnoid = al.alumnoid
+INNER JOIN programas pr ON pr.programaid = pral.programaid;
 
 ```
