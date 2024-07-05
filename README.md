@@ -11,7 +11,6 @@ Este proyecto consiste en la creación de una base de datos relacional para gest
 - ✔️ **Modelo Entidad-Relación (E/R):** que represente la estructura de la base de datos normalizada.
 - ✔️ **Modelo Lógico de la Base de Datos:** Con base en el modelo E/R, desarrollar un modelo lógico.
 - ✔️ **Creación de la Base de Datos:** Utilizando el sistema de gestión de bases de datos de PostgreSQL.
-- ❌ **Alojar en algún servidor** vuestras bases de datos para poder acceder desde aplicaciones de terceros.
 
 ## Assumptions
 
